@@ -57,6 +57,7 @@ const css = {
   use: [
     { loader: 'style-loader' },
     { loader: 'css-loader' },
+    { loader: 'autoprefixer-loader' },
     { loader: 'sass-loader' },
   ],
   include: path.resolve(__dirname, 'src/css'),
@@ -115,7 +116,11 @@ config.module = {
     css,
     // cssExtract,
     html,
-    img
+    img,
+    {
+      test: /\.txt$/,
+      use: 'raw-loader'
+    }
   ]
 }
 

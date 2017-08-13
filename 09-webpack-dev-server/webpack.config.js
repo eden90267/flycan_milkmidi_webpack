@@ -98,9 +98,8 @@ module.exports = {
     stats: {
       chunks: true,  // Add built modules information to chunk information
     },
-    /* 讓外部裝置能夠連 localhost
+    // 讓外部裝置能夠連 localhost
     host: '0.0.0.0',
     disableHostCheck: true,
-    // */
   },
 };

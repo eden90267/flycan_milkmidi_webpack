@@ -4,7 +4,7 @@ import {foo} from './util';
 import "app.scss";
 import "index.html";
 
-console.log('-------- app.js ---------');
+console.log('-------- app.js ---------123');
 console.log(process.env.NODE_ENV);
 
 foo('milkmidi');
