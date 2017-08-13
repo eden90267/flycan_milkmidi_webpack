@@ -1,0 +1,15 @@
+- var devMode = self.htmlWebpackPlugin.options.data.DEV_MODE
+- var title = 'webpack-vue'
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+    meta(property="og:title" content=title)
+  body
+    #app
+    if(devMode)
+      script(src='//cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.js')
+    else
+      script(src='//cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js')

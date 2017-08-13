@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+    // https://babeljs.io/docs/plugins/transform-runtime/
+    // "transform-runtime" // transform-runtime 會自動應用 polyfill，即便沒有使用 babel-polyfill
+    ["transform-runtime",{
+      "polyfill": false
+    }]
+  ]
+}

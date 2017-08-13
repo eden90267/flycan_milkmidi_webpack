@@ -1,0 +1,28 @@
+@import "basic";
+body {
+  background-color: green; 
+  background-color:yellow;
+}
+
+h1 {
+  color: red;
+}
+
+.flex {
+  display: flex;
+  color: yellow;
+  .inner {
+    display: block;
+  }
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-image: url('~milkmidi_2.png');
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-image: url('~milkmidi.png');
+}

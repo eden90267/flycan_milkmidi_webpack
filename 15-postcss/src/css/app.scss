@@ -1,0 +1,30 @@
+body {
+  background-color: green;
+}
+h1 {
+  color: red;
+}
+.flex {
+  display: flex;
+  .inner {
+    display: block;
+  }
+}
+.flex {
+  width: 100px;
+}
+.flex {
+  height: 200px;
+}
+.a {
+  z-index: 999;
+}
+.b {
+  z-index: 888;
+}
+.b {
+  height: 400px;
+}
+.bg {
+  background-image: url('~milkmidi.png');
+}

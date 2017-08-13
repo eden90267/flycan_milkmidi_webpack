@@ -1,0 +1,14 @@
+{
+  "name": "milkmidi-webpack-example",
+  "version": "1.0.0",
+  "description": "webpack example 01",
+  "author": "milkmidi",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack",
+    "start-run": "./node_modules/.bin/webpack && node dist/bundle.js",
+    "build": "./node_modules/.bin/webpack -p"
+  },
+  "dependencies": {
+    "webpack": "^3.4.1"
+  }
+}

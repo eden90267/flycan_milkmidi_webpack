@@ -1,0 +1,37 @@
+{
+  "name": "milkmidi-webpack-example",
+  "version": "1.0.0",
+  "description": "webpack example 18",
+  "author": "milkmidi",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --progress --hot --devtool eval",
+    "build": "rimraf ./dist && cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress"
+  },
+  "devDependencies": {
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "extract-loader": "^0.1.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.28.0",
+    "img-loader": "^2.0.0",
+    "node-sass": "^4.4.0",
+    "pug": "^2.0.0-rc.2",
+    "pug-html-loader": "^1.1.5",
+    "pug-loader": "^2.3.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^3.4.1"
+  }
+}
