@@ -15,7 +15,6 @@ module.exports = {
   rules: {
     'import/extensions': ['error', 'always', {
       js: 'never',
-      vue: 'never',
     }],
     'no-param-reassign': ['error', {
       props: false

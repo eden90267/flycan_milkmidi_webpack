@@ -10,3 +10,7 @@ console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   require('./app.dev');
 }
+
+window.func01 = () => {
+  console.log('fun01');
+};

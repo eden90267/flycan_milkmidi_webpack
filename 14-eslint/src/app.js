@@ -4,6 +4,10 @@ import util, { foo } from './util';
 console.log(util);
 console.log(foo());
 
+
+alert('123'); // eslint-disable-line
+
+
 const a = 'milkmidi';
 function name(params) {
   params.name = 'milkmidi';

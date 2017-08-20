@@ -61,6 +61,13 @@ gulp.task('webpack-dev-server', (cb) => {
 gulp.task('webpack-build', () => {
   process.env.NODE_ENV = 'production';
   const config = require('./webpack.config');
+  config.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        warnings: false,
+      },
+    }));
   const compiler = webpack(config);
   compiler.apply(new webpack.ProgressPlugin());
   compiler.run((err, stats) => {
@@ -88,4 +95,4 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', ['watch', 'webpack-dev-server']);
+gulp.task('default', ['m', 'watch', 'webpack-dev-server']);

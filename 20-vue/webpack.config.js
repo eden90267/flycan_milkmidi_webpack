@@ -11,6 +11,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const PrerenderSpaPlugin = require('prerender-spa-plugin');
 
 const ENV = process.env.NODE_ENV || 'development';
 const DEV_MODE = ENV === 'development';
@@ -41,7 +42,7 @@ const config = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
-    extensions: ['.js', '.vue'],
+    extensions: ['.js'],
   },
 };
 
@@ -107,5 +108,9 @@ config.plugins = [
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': DEV_MODE ? '"development"' : '"production"',
   }),
+  new PrerenderSpaPlugin(
+    path.join(__dirname, './dist'),
+    ['/'] // eslint-disable-line
+  ),
 ];
 module.exports = config;
