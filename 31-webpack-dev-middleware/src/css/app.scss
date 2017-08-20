@@ -1,0 +1,17 @@
+body{
+  background-color:green;
+  // background-color:red;
+}
+h1{
+  color:red;
+}
+.flex{
+  display: flex;
+  color:yellow;
+  .inner{
+    display: block;
+  }
+}
+.bg{
+  background-image:url('~milkmidi.png');
+}

@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "server.js",
+    "server.dev.js"
+  ],
+  "ignore": [
+    "src/*",
+    "node_modules/*",
+    "webpack.config.js",
+    "package.json",
+    ".eslintrc.js"
+  ]
+}
